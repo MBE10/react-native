@@ -4,10 +4,10 @@ import { Text, Stylesheet, View  } from "react-native";
 
 const MainScreen = () => {
 
-    return
+    return(
     <view style={style.container}>
         <text style={style.TextStyle}>This is Main MainScreen</text>
-    </view>
+    </view>)
 }
 
 const style = StyleSheet.create({
@@ -15,10 +15,10 @@ const style = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-    }
+    },
     TextStyle: {
         fontSize: 30
     }
 });
 
-export defeault MainScreen;
+export default MainScreen;
