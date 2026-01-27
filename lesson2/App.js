@@ -5,10 +5,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from './screens/Home';
 import Contact from './screens/Contact';
+import FlatListsExample from './screens/FlatListsExample';
+import FlatListsExample2 from './screens/FlatListsExample2';
 
 const Stack = createStackNavigator();
 
-let mesazhi =  "Hello World!";
+
 
 
 
@@ -18,14 +20,12 @@ export default function App() {
      <Stack.Navigator>
      <Stack.Screen name='home' component={Home}></Stack.Screen>
      <Stack.Screen name='contact' component={Contact}></Stack.Screen>
+     <Stack.Screen name='FlatListsExample' component={FlatListsExample}/>
+     <Stack.Screen name='FlatListsExample2' component={FlatListsExample2}/>
      </Stack.Navigator>
+
     </NavigationContainer>
 
-
-    // <View style={styles.container}>
-    //   <Text>{mesazhi}</Text>
-    // </View>
-    //<Home/>
  
   );
 }
