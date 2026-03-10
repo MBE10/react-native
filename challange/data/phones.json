@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15",
+    "category": "Apple",
+    "image": "https://store.storeimages.cdn-apple.com/iphone15.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Samsung S24",
+    "category": "Samsung",
+    "image": "https://images.samsung.com/s24.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi 14",
+    "category": "Xiaomi",
+    "image": "https://i02.appmifile.com/xiaomi14.jpg"
+  }
+]
