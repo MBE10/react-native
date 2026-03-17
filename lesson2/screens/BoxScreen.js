@@ -1,20 +1,25 @@
-// import React from 'react';
-// import {text,StyleSheet} from 'react-native'
+import React from 'react';
+import { Text, StyleSheet } from 'react-native';
 
-// const BoxScreen = () => {
-//     return(
-//         <View style={StyleSheet.container}>
-//             <Text>Box Screen</Text>
-//         </View>
-//     );
-// };
+const BoxScreen = () => {
+  return (
+    // Try setting `alignItems` to 'flex-start'
+    // Try setting `justifyContent` to `flex-end`.
+    // Try setting `flexDirection` to `row`.
+    <View style={{
+      flex: 1,
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'stretch',
+    }}>
+      <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+      <View style={{height: 50, backgroundColor: 'skyblue'}} />
+      <View style={{height: 100, backgroundColor: 'steelblue'}} />
+    </View>
+  );
+};
 
-// const styless = StyleSheet.create({
-//     container:{
-//         flex: 1,
-//         flexDirection: 'row',
-//     },
-// });
 
+const styles = StyleSheet.create({});
 
-// export default BoxScreen;
+export default BoxScreen;
