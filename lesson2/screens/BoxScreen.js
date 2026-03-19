@@ -1,11 +1,8 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
 
 const BoxScreen = () => {
   return (
-    // Try setting `alignItems` to 'flex-start'
-    // Try setting `justifyContent` to `flex-end`.
-    // Try setting `flexDirection` to `row`.
     <View style={{
       flex: 1,
       flexDirection: 'column',
@@ -18,7 +15,6 @@ const BoxScreen = () => {
     </View>
   );
 };
-
 
 const styles = StyleSheet.create({});
 
