@@ -6,8 +6,8 @@ const {width} = Dimensions.get('window');
 
 const slides = Array.from({length: 5}).map((_ , 1) => ({
     id: i.toString(),
-    title: 'Slide ${i+ 1}',
-    image: 'https://picsum.photos/800/400?random=${1}',
+    title:  `Slide ${i+ 1}`,
+    image: `https://picsum.photos/800/400?random=${1}`,
 
 }));
 
