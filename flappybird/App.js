@@ -1,50 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { Dimensions, StyleSheet, Text, View } from 'react-native';
-import Bird from './src/components/bird';
-import { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
+import {StyleSheet, Text, View, Dimensions, TouchableWithoutFeedback, Image} from "react-native";
+import Bird from './src/components/bird'
+import Obstacles from './src/components/Obstacle';
 
 export default function App() {
-  const screenWidth = Dimensions.get("screen").Width
-  const screenHeight = Dimensions.get("screen").Height
-  const birdLeft = screenWidth/2
-  const [birdBottom,setBirdBottom] = useState(screenHeight/2)
+  const screenWidth = Dimensions.get("screen").width
+  const screenHeight = Dimensions.get("screen").height
+  const birdLeft = screenWidth / 2
+  const [birdBottom, setBirdBottom] = useState(screenHeight / 2)
+  const [obstacles , setObstaclesLeft] = useState(screenWidth)
+  const [obstaclesLeftTwo, setObstaclesLeftTwo] = useState(screenWidth  + screenWidth/2 +30)
+  const [obstaclesNegHeight, setobstaclesNegHeight] = useState(0)
+  const [obstaclesNegHeightTwo, setobstaclesNegHeightTwo] = useState(0)
+  const [isGameOver, setIsGameOver] = useState(false)
+  const [score, setScore] = useState(0)
   const gravity = 3
+  let obstacleWidth = 60
+  let ObstacleHeight = 300
+  let gap = 200
   let gameTimerId
-
-    useEffect(() => {
-      if(birdBottom>0){
-        gameTimerId = setInterval(()=>{
-          setBirdBottom(birdBottom => birdBottom - gravity)
-        },30);
-
-        return () =>{
-          clearInterval(gameTimerId)
-
-          
-        };
-      }
-     }, [birdBottom]);
-
-
-
-    }
+  let obstaclesTimerId
   
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <Bird/>
-    </View>
-  );
-
-
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+}

@@ -8,15 +8,23 @@ const Bird = () =>{
     return(
         <View style = {{
             position: 'absolute',
-            backgroundColor: 'Blue',
-            height:birdHeight,
-            width:birdWidth,
             left: birdLeft - (birdWidth/2),
-            bottom: birdBottom - (birdHeight/2)
+            bottom: birdBottom - (birdHeight/2),
+            width: 40,
+            height:40
 
-
-
-
-        }}></View>
+        }}
+        source={require('../../assets/bird1.png')}
+        resizeMode="stretch"
+        />
     )
 }
+
+const styles = StyleSheet.create({
+    tinyLogo: {
+        width: 40,
+        height: 40
+    },
+ });
+
+export default Bird;
